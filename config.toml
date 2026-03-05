@@ -1,0 +1,209 @@
+baseURL = "https://tile3dprint.com/"
+languageCode = "en-us"
+title = "Tile 3D Print"
+theme = "printwire"
+
+# All single-value params MUST come before [[params.*]] array tables
+[params]
+tagline       = "Your ceramic fabrication partner from first sketch to installation-ready tile."
+description   = "Tile 3D Print — direct ceramic fabrication partner for architects and designers, turning tile concepts into fired, installation-ready ceramics faster than traditional tile manufacturing."
+keywords      = "custom tile fabrication, 3D printed tiles, ceramic tile manufacturer, bespoke tile printing, facade tile fabrication, architectural tile, installation-ready tiles"
+logoEmoji     = "🏛️"
+contactEmail  = "maxdavisgroup@gmail.com"
+ogImage       = "images/19_before_after_firing.png"
+footerServicesLabel = "Services"
+
+colorPrimary      = "#c2714f"
+colorPrimaryDark  = "#a85e3e"
+colorPrimaryLight = "#d4896b"
+colorBgDark       = "#0d0b09"
+colorBgSection    = "#111009"
+colorBgCard       = "#1a1510"
+colorBgCardHover  = "#231d15"
+colorBorder       = "rgba(194,113,79,0.18)"
+colorBorderLight  = "rgba(194,113,79,0.08)"
+
+fontPrimary   = "Josefin+Sans"
+fontSecondary = "Lato"
+
+pubmedQuery    = "ceramic+tile+fabrication+additive+manufacturing"
+pubmedFallback = "ceramic+tile+manufacturing"
+newsFallbackImages = [
+  "images/19_before_after_firing.png",
+  "images/15_greenware_row.png",
+  "images/12_ceramic_tiles.png",
+]
+
+heroEyebrow  = "Custom Tile Fabrication"
+heroTitle    = "Your <em>Custom Tile</em><br>In 2 Weeks"
+heroSubtitle = "Direct fabrication partner for architects and designers — turning your tile concept into fired, installation-ready ceramic faster and more affordably than traditional tile manufacturing."
+heroCta1Text = "Get a Quote"
+heroCta1URL  = "/contact/"
+heroCta2Text = "How It Works"
+heroCta2URL  = "/services/"
+heroImage    = "images/19_before_after_firing.png"
+
+newsSectionTitle    = "Ceramic Fabrication Research"
+newsSectionSubtitle = "Research on ceramic production methods, glaze chemistry, and tile installation systems."
+
+overviewLabel   = "Our Approach"
+overviewTitle   = "Design to Installation, End to End"
+overviewText    = "Tile 3D Print acts as your ceramic fabrication partner from first sketch to final installation. We translate digital design files — whether DXF, Rhino, or Grasshopper — directly to print-ready toolpaths, eliminating the mold-making step entirely."
+overviewText2   = "Our team includes ceramic engineers, glaze chemists, and installation specialists. We don't just print your tiles — we make sure they're the right material, the right glaze, and the right fixing system for your project."
+overviewImage   = "images/15_greenware_row.png"
+overviewBtnText = "See Our Process"
+overviewBtnURL  = "/services/"
+
+applicationsLabel = "What We Build"
+applicationsTitle = "Custom Tile Projects We Deliver"
+
+servicesLabel    = "What We Offer"
+servicesTitle    = "Coverage & Services"
+servicesSubtitle = "Expert coverage and fabrication services for ceramic additive manufacturing."
+
+clusterLabel = "Ceramic Cluster"
+clusterTitle = "Related Ceramic 3D Printing Sites"
+
+newsletterTitle = "Custom Tile Project Updates"
+newsletterText  = "Material innovations, production guides, and fabrication case studies — monthly."
+
+ctaTitle   = "Start Your Tile Project"
+ctaText    = "Tell us your tile concept — we'll respond with a quote within 24 hours."
+ctaImage   = "images/20_floor_vase.png"
+ctaBtnText = "Request a Quote"
+ctaBtnURL  = "/contact/"
+
+[[params.stats]]
+count  = 5
+suffix = " days"
+label  = "Prototype Turnaround"
+
+[[params.stats]]
+count  = 50
+suffix = "+"
+label  = "Minimum Batch Size"
+
+[[params.stats]]
+count  = 0
+suffix = " molds"
+label  = "Required to Start"
+
+[[params.stats]]
+count  = 14
+suffix = " days"
+label  = "Production Tiles Ready"
+
+[[params.applications]]
+title       = "Design Prototyping"
+description = "Fast-turn tile samples for client presentations and design development — 5-day turnaround."
+image       = "images/17_artist_hands.png"
+
+[[params.applications]]
+title       = "Small Batch Production"
+description = "50 to 5,000 tiles produced digitally — no mold tooling cost, no minimum color commitment."
+image       = "images/15_greenware_row.png"
+
+[[params.applications]]
+title       = "Architectural Facades"
+description = "Large-format extruded facade tiles for commercial and institutional buildings — full weathering certification."
+image       = "images/06_wall_panel.png"
+
+[[params.applications]]
+title       = "Custom Glaze & Colour"
+description = "Bespoke glaze development to match brand colours, material palettes, or historical references."
+image       = "images/11_glazed_bowl.png"
+
+[[params.servicesPreview]]
+icon        = "🏛️"
+title       = "Design Consultation"
+description = "We review your design for printability and advise on material, glaze, and installation systems."
+
+[[params.servicesPreview]]
+icon        = "🖨️"
+title       = "3D Print Production"
+description = "In-house ceramic extrusion for bespoke tile geometries — no mold tooling required."
+
+[[params.servicesPreview]]
+icon        = "🔥"
+title       = "Firing & Glazing"
+description = "Kiln-fired to archival standard. Custom glaze development and quality inspection included."
+
+[[params.servicesPreview]]
+icon        = "📦"
+title       = "Delivery & Install"
+description = "Packed for site delivery with full installation specification and substrate guidance."
+
+[[params.services]]
+name        = "Design Consultation"
+description = "We review your design for printability and advise on material, glaze, and installation systems."
+icon        = "🏛️"
+
+[[params.services]]
+name        = "3D Print Production"
+description = "In-house ceramic extrusion for bespoke tile geometries — no mold tooling required."
+icon        = "🖨️"
+
+[[params.services]]
+name        = "Firing & Glazing"
+description = "Kiln-fired to archival standard. Custom glaze development and quality inspection included."
+icon        = "🔥"
+
+[[params.services]]
+name        = "Delivery & Install"
+description = "Packed for site delivery with full installation specification and substrate guidance."
+icon        = "📦"
+
+[[params.clusterLinks]]
+name        = "3dprintceramic.com"
+url         = "https://3dprintceramic.com"
+description = "Flagship — ceramic AM news & services"
+
+[[params.clusterLinks]]
+name        = "3dprintceramics.com"
+url         = "https://3dprintceramics.com"
+description = "Ceramics community & resources"
+
+[[params.clusterLinks]]
+name        = "3dprintporcelain.com"
+url         = "https://3dprintporcelain.com"
+description = "Porcelain & fine clay printing"
+
+[[params.clusterLinks]]
+name        = "3dprintstone.com"
+url         = "https://3dprintstone.com"
+description = "Stone & geopolymer AM"
+
+[[params.clusterLinks]]
+name        = "3dprinttile.com"
+url         = "https://3dprinttile.com"
+description = "Custom ceramic tile design"
+
+[[menu.main]]
+name   = "Home"
+url    = "/"
+weight = 1
+
+[[menu.main]]
+name   = "About"
+url    = "/about/"
+weight = 2
+
+[[menu.main]]
+name   = "Articles"
+url    = "/articles/"
+weight = 3
+
+[[menu.main]]
+name   = "Services"
+url    = "/services/"
+weight = 4
+
+[[menu.main]]
+name   = "Contact"
+url    = "/contact/"
+weight = 5
+
+[[menu.main]]
+name   = "Advertise"
+url    = "/advertise/"
+weight = 6
