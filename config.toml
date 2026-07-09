@@ -18,7 +18,7 @@ description   = "Tile 3D Print — direct ceramic fabrication partner for archit
 keywords      = "custom tile fabrication, 3D printed tiles, ceramic tile manufacturer, bespoke tile printing, facade tile fabrication, architectural tile, installation-ready tiles"
 logoEmoji     = "🏛️"
 contactEmail  = "maxdavisgroup@gmail.com"
-ogImage       = "images/19_before_after_firing.png"
+ogImage       = "/images/03_textured_collection.png"
 footerServicesLabel = "Services"
 
 colorPrimary      = "#c2714f"
