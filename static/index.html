@@ -13,10 +13,10 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Tile 3D Print — Technical Ceramic &amp; Porcelain AM News &amp; Suppliers">
   <meta property="og:description" content="Tile 3D Print: technical ceramics, porcelain, tile, and stone additive manufacturing news, research, and a directory connecting studios to suppliers.">
-  <meta property="og:image" content="https://tile3dprint.com/images/03_textured_collection.png">
+  <meta property="og:image" content="https://tile3dprint.com/images/01_hero_sculptural_stone.png">
   <meta property="og:url" content="https://tile3dprint.com/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://tile3dprint.com/images/03_textured_collection.png">
+  <meta name="twitter:image" content="https://tile3dprint.com/images/01_hero_sculptural_stone.png">
 </head>
 <body>
 
@@ -50,19 +50,15 @@
 
     <!-- Featured Story -->
     <article class="ed-hero">
-      <img src="images/03_textured_collection.png" alt="3D printed ceramic collection">
+      <img src="images/01_hero_sculptural_stone.png" alt="Tile & Stone">
       <div class="ed-hero-overlay"></div>
       <div class="ed-hero-content">
-        <span class="ed-badge">Aerospace</span>
-        <h1><a href="#">Ceramic Matrix Composites Are Reaching the Turbine</a></h1>
+        <span class="ed-badge">Tile & Stone</span>
+        <h1><a href="#">3D-Printed Architectural Tile &amp; <span class="ed-logo-accent">Stone</span></a></h1>
         <div class="ed-hero-meta">
-          <span>June 27, 2026</span>
-          <span>·</span>
-          <span>8 min read</span>
-          <span>·</span>
-          <span>By PrintWire Editorial</span>
+          <span>June 27, 2026</span><span>·</span><span>8 min read</span><span>·</span><span>By PrintWire Editorial</span>
         </div>
-        <p class="ed-hero-excerpt">Higher operating temperatures at lower weight — printed CMCs and technical ceramics are moving from the lab into production engines and fine tableware alike.</p>
+        <p class="ed-hero-excerpt">From custom relief tiles to engineered-stone surfaces, additive manufacturing brings per-piece pattern variation and complex texture to architectural ceramics.</p>
       </div>
     </article>
 
@@ -111,7 +107,7 @@
     </div>
     <div class="ed-list">
       <article class="ed-list-item">
-        <img src="images/09_abstract_sculpture.png" alt="Printed ceramic sculpture">
+        <img src="images/02_engineered_stone.png" alt="Printed ceramic sculpture">
         <div>
           <span class="ed-badge">Technical</span>
           <div class="ed-card-meta">June 24, 2026 · 9 min read</div>
@@ -120,7 +116,7 @@
         </div>
       </article>
       <article class="ed-list-item">
-        <img src="images/08_teacup_set.png" alt="Printed porcelain tableware">
+        <img src="images/03_stone_surface.png" alt="Printed porcelain tableware">
         <div>
           <span class="ed-badge">Tableware</span>
           <div class="ed-card-meta">June 20, 2026 · 7 min read</div>
@@ -129,7 +125,7 @@
         </div>
       </article>
       <article class="ed-list-item">
-        <img src="images/06_wall_panel.png" alt="Ceramic wall panel">
+        <img src="images/04_stone_cladding.png" alt="Ceramic wall panel">
         <div>
           <span class="ed-badge">Architecture</span>
           <div class="ed-card-meta">June 18, 2026 · 10 min read</div>
@@ -145,27 +141,27 @@
     </div>
     <div class="ed-card-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.5rem;">
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/01_voronoi_vase.png" alt="Decor & Vases">
+        <img class="ed-card-img" src="images/05_textured_stone.png" alt="Decor & Vases">
         <div class="ed-card-body"><h3>Decor &amp; Vases</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/08_teacup_set.png" alt="Tableware">
+        <img class="ed-card-img" src="images/06_stone_relief.png" alt="Tableware">
         <div class="ed-card-body"><h3>Tableware</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/06_wall_panel.png" alt="Architecture">
+        
         <div class="ed-card-body"><h3>Architecture</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/05_lattice_cubes.png" alt="Technical">
+        
         <div class="ed-card-body"><h3>Technical</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/07_studio_workstation.png" alt="Studios">
+        
         <div class="ed-card-body"><h3>Studios</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/10_industrial_printer.png" alt="Industrial">
+        
         <div class="ed-card-body"><h3>Industrial</h3></div>
       </a>
     </div>
@@ -348,7 +344,7 @@ document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
     btn.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
   }
   const saved = localStorage.getItem('ed-theme');
-  setTheme(saved || 'light');
+  setTheme(saved || 'dark');
   btn.addEventListener('click', () => {
     const current = root.getAttribute('data-theme') || 'light';
     setTheme(current === 'dark' ? 'light' : 'dark');
