@@ -170,36 +170,10 @@
     <!-- Analysis & Deep Dives -->
     <div class="ed-section-label">
       Analysis &amp; Deep Dives
-      <a href="#">View All &rarr;</a>
+      <a href="/articles/">View All &rarr;</a>
     </div>
-    <div class="ed-list">
-      <article class="ed-list-item">
-        <img src="images/tile_facade.png" alt="Printed facade tile">
-        <div>
-          <span class="ed-badge">Fabrication</span>
-          <div class="ed-card-meta">June 24, 2026 · 9 min read</div>
-          <h3><a href="#">From Design File to Fired Tile: The 14-Day Pipeline</a></h3>
-          <p class="ed-card-excerpt">How a Rhino file becomes a glazed, installation-ready tile in two weeks flat, without tooling or mold investment.</p>
-        </div>
-      </article>
-      <article class="ed-list-item">
-        <img src="images/tile_patterns.png" alt="Parametric tile patterns">
-        <div>
-          <span class="ed-badge">Design</span>
-          <div class="ed-card-meta">June 20, 2026 · 7 min read</div>
-          <h3><a href="#">Parametric Tile Design: Rules, Not Shapes</a></h3>
-          <p class="ed-card-excerpt">Grasshopper and algorithmic design tools that generate field-to-field variation across any tile installation.</p>
-        </div>
-      </article>
-      <article class="ed-list-item">
-        <img src="images/tile_wavy.png" alt="Custom relief wall tile">
-        <div>
-          <span class="ed-badge">Architecture</span>
-          <div class="ed-card-meta">June 18, 2026 · 10 min read</div>
-          <h3><a href="#">Facade Tile Without Molds: How Architects Are Specifying Printed Cladding</a></h3>
-          <p class="ed-card-excerpt">Glazed architectural tile with per-panel geometry is moving from art installations to specified cladding systems.</p>
-        </div>
-      </article>
+    <div class="ed-list" id="pwDeepDives">
+      <div style="padding:1.5rem;color:var(--text-faint);">Loading analysis…</div>
     </div>
 
     <!-- Applications -->
@@ -532,6 +506,31 @@ document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
       ? top.map(card).join('')
       : '<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--text-faint);">Unable to load news.</div>';
   }
+})();
+
+// -- Analysis & Deep Dives: PrintWire catalog in list format --
+(function(){
+  var box = document.getElementById('pwDeepDives');
+  if (!box) return;
+  function esc(s){var d=document.createElement('div');d.appendChild(document.createTextNode(s==null?'':s));return d.innerHTML;}
+  var empty = '<div style="padding:1.5rem;color:var(--text-faint);">In-depth analysis and deep dives are on the way — check back soon.</div>';
+  fetch('network.json',{cache:'no-store'})
+    .then(function(r){ return r.ok ? r.json() : []; })
+    .then(function(items){
+      items = (items || []).slice();
+      items.sort(function(a,b){ return (b.iso||'').localeCompare(a.iso||''); });
+      if (!items.length){ box.innerHTML = empty; return; }
+      box.innerHTML = items.slice(0,8).map(function(a){
+        var img = a.img ? '<img src="'+esc(a.img)+'" alt="" loading="lazy">' : '';
+        var meta = esc(a.date||'') + (a.origin ? ' · '+esc(a.origin) : '');
+        return '<article class="ed-list-item">'+img+'<div>'+
+          '<div class="ed-card-meta">'+meta+'</div>'+
+          '<h3><a href="'+esc(a.url)+'">'+esc(a.title)+'</a></h3>'+
+          '<p class="ed-card-excerpt">'+esc(a.summary||'')+'</p>'+
+          '</div></article>';
+      }).join('');
+    })
+    .catch(function(){ box.innerHTML = empty; });
 })();
 </script>
 </body>
