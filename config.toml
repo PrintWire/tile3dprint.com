@@ -14,7 +14,7 @@ title = "Tile 3D Print"
 siteName      = "Tile 3D Print"
 logoHtml      = 'TILE&nbsp;<span class="ed-logo-accent">3D&nbsp;PRINT</span>'
 tagline       = "Your ceramic fabrication partner from first sketch to installation-ready tile."
-description   = "Tile 3D Print — direct ceramic fabrication partner for architects and designers, turning tile concepts into fired, installation-ready ceramics faster than traditional tile manufacturing."
+description   = "Tile 3D Print is a PrintWire network site about 3D printed tile. PrintWire passes quote requests to specialised manufacturers and returns pricing. PrintWire does not manufacture parts itself."
 keywords      = "custom tile fabrication, 3D printed tiles, ceramic tile manufacturer, bespoke tile printing, facade tile fabrication, architectural tile, installation-ready tiles"
 logoEmoji     = "🏛️"
 contactEmail  = "maxdavisgroup@gmail.com"
